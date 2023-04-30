@@ -3,6 +3,12 @@ const { default: mongoose } = require("mongoose");
 const User = require("../models/User");
 const bcrypt = require("bcrypt");
 //REGISTER
+
+
+route.get("/register", (req,res)=>{
+  res.send("register sayfası")
+})
+
 route.post("/register", async (req, res) => {
   try {
     //generate new password
